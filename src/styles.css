@@ -1,0 +1,40 @@
+.products {
+  margin: 20px;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.single_product {
+  padding: 20px;
+  height: 150px;
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.single_product > img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  margin-bottom: 1px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 10px;
+}
+.pagination > span {
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.selected-page {
+  background-color: rgb(220, 220, 220);
+}
+
+.pagination-disable {
+  opacity: 0;
+}
